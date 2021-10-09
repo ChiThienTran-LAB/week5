@@ -57,6 +57,8 @@ public class test {
 		driver.manage().window().maximize();
 		//cal func
 		getRowNumberByValue(driver, "391.1");
+		//close
+		driver.close();
 	}
 	//
 	@Test
@@ -72,6 +74,8 @@ public class test {
 		driver.manage().window().maximize();
 		//cal func
 		getTableCellValue(driver, 3);
+		//close
+		driver.close();
 	}
 	@Test
 	//5
@@ -86,7 +90,10 @@ public class test {
 		driver.manage().window().maximize();
 		//cal func
 		checkItemExist(driver,"917.6");
+		//close
+		driver.close();
 	}
+	///Method///
 	//1
 	public static void getTTC(WebDriver dri) {
 		List<WebElement> col = dri.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
